@@ -14,19 +14,19 @@ export class StatusPrioridadeDirective {
 
  ngOnInit () {
     if (this.statusPrioridade == 'Imediato') {
-      this.elemento.nativeElement.style.backgroundColor = 'pink';
+      this.elemento.nativeElement.style.backgroundColor = '#FF0000';
     } 
     else if (this.statusPrioridade == "Muito urgente") {
-      this.elemento.nativeElement.style.backgroundColor = 'rgb(255, 172, 104)';
+      this.elemento.nativeElement.style.backgroundColor = '#FF8C00';
     } 
     else if (this.statusPrioridade == "Urgente") {
-      this.elemento.nativeElement.style.backgroundColor = 'rgb(255, 255, 132)';
+      this.elemento.nativeElement.style.backgroundColor = '#FFFF00';
     } 
     else if (this.statusPrioridade == "Pouco urgente") {
-      this.elemento.nativeElement.style.backgroundColor = 'rgb(176, 255, 176)';
+      this.elemento.nativeElement.style.backgroundColor = '#00FF7F';
     } 
     else if (this.statusPrioridade == "Não urgente"){
-      this.elemento.nativeElement.style.backgroundColor = 'rgb(141, 193, 241)';
+      this.elemento.nativeElement.style.backgroundColor = '#00CED1';
     }
   }
 

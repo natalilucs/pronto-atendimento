@@ -35,7 +35,7 @@ export class AtendimentoService {
   }
 
   alterarStatus(id: number):void {
-    const atendimentos : Atendimento[] = this.listarPacientes();
+    let atendimentos : Atendimento[] = this.listarPacientes();
     atendimentos.forEach((obj,indice,objs)=>{
       if (id === obj.id){
         objs[indice].status = !obj.status;
@@ -43,5 +43,7 @@ export class AtendimentoService {
     });
     localStorage['atendimentos'] = JSON.stringify(atendimentos);
   }
+
+
 
 }
